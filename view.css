@@ -7,7 +7,9 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -28,20 +30,25 @@ body {
   padding: 20px;
 }
 
-/* Media query for reducing size on smaller screens */
+/* Media queries for different screen sizes */
 
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
+/* Small screens */
+@media only screen and (max-width: 767px) {
   .container {
     padding: 10px;
   }
+}
 
-  .header,
-  .content,
-  .footer {
-    padding: 10px;
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 30px;
   }
 }
