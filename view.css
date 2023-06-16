@@ -1,42 +1,59 @@
-/* Styles for desktop view */
+/* Styles for both mobile and desktop views */
 
 /* Common styles */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  flex: 1 100%;
 }
 
 .content {
   padding: 20px;
+  flex: 1 100%;
 }
 
 .footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  flex: 1 100%;
 }
 
 /* Media query for mobile view */
 
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
+@media only screen and (min-width: 768px) {
+  .header,
+  .content,
+  .footer {
+    flex-basis: 100%;
+  }
+}
+
+/* Media query for desktop view */
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    flex-basis: 20%;
   }
 
-  .header,
+  .content {
+    flex-basis: 60%;
+  }
+
   .footer {
-    padding: 10px;
+    flex-basis: 20%;
   }
 }
