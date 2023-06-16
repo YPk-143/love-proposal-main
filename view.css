@@ -1,32 +1,42 @@
-/* CSS for desktop view */
+/* Styles for desktop view */
 
-    body {
-      font-family: Arial, sans-serif;
-      width: 960px;
-      margin: 0 auto;
-    }
+/* Common styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
 
-    h1 {
-      color: #333;
-    }
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
 
-    p {
-      color: #666;
-    }
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-    /* CSS for mobile view */
+.content {
+  padding: 20px;
+}
 
-    @media only screen and (max-width: 480px) {
-      body {
-        width: auto;
-        padding: 10px;
-      }
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-      h1 {
-        font-size: 24px;
-      }
+/* Media query for mobile view */
 
-      p {
-        font-size: 14px;
-      }
-    }
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .header,
+  .footer {
+    padding: 10px;
+  }
+}
