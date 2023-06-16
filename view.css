@@ -1,0 +1,32 @@
+/* CSS for desktop view */
+
+    body {
+      font-family: Arial, sans-serif;
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    /* CSS for mobile view */
+
+    @media only screen and (max-width: 480px) {
+      body {
+        width: auto;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
